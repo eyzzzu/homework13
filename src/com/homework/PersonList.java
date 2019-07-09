@@ -87,7 +87,7 @@ public class PersonList {
 
         day = String.format(format, rnd.nextInt(31) + 1);
         month = String.format(format, rnd.nextInt(12) + 1);
-        year = String.format(format, rnd.nextInt(60) + 1950);
+        year = "" + (rnd.nextInt(60) + 1950);
         birthDay = day + "." + month + "." + year;
         return birthDay;
     }
